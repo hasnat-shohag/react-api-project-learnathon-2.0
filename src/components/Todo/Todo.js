@@ -4,7 +4,7 @@ import LoadingSpinner from "../Loader/LoadinSpinner";
 const Todo = () => {
 	const [value, setValue] = useState([]);
 	const isDataFetched = useRef(false);
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 	const [errorMessage, setErrorMessage] = useState("");
 
 	const apiFun = async () => {
@@ -12,14 +12,14 @@ const Todo = () => {
 			"https://jsonplaceholder.typicode.com/todos/"
 		)
 			.then((res) => res.json())
-			.catch((err) => {
+			.catch(() => {
+				setIsLoading(false);
 				setErrorMessage("Unable to fetch user list");
 			});
 		return responseData;
 	};
 
 	useEffect(() => {
-		setIsLoading(true);
 		if (isDataFetched.current) return;
 		apiFun().then((res) => {
 			setValue(res);
