@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.main-content{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+/* .main-content .todo-list-content{} */
+.main-content .todo-list-content ul{
+  list-style: number;
+}
+.main-content .todo-list-content ul li{
+  padding: 10px;
+}
