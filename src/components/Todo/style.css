@@ -1,0 +1,30 @@
+.main-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main-content .todo-list-content ul{
+    list-style: number;
+}
+.main-content .todo-list-content ul div{
+    padding: 10px;
+    border: 1px solid red;
+}
+.main-content .short-content label{
+    padding-right: 10px;
+}
+.main-content .short-content{
+    font-size: 20px;
+}
+.main-content .short-content select{
+    font-size: 20px;
+    width: 150px;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+.main-content .short-content select option{
+    font-size: 20px;
+}

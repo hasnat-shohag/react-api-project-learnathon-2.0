@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import LoadingSpinner from "../Loader/LoadinSpinner";
+import "./style.css";
 
 const Todo = () => {
 	const [value, setValue] = useState([]);
@@ -53,9 +54,26 @@ const Todo = () => {
 		<div>
 			<div className="main-content">
 				<div className="todo-list-content">
+					<div style={{ textAlign: "center", fontSize: "25px" }}>
+						Todo List
+					</div>
 					<ul>
 						{todoList.map((val) => {
-							return <li key={val.id}>{val.title}</li>;
+							let dynamicTitle =
+								"This is the Title of the User " + val.id;
+							return (
+								<div key={val.id} title={dynamicTitle}>
+									<span
+										style={{
+											color: "#0B0F3D",
+											fontWeight: "600",
+										}}
+									>
+										{val.id}
+									</span>
+									. {val.title}
+								</div>
+							);
 						})}
 					</ul>
 				</div>
@@ -66,10 +84,9 @@ const Todo = () => {
 						value={filter}
 						onChange={handleChangeFilter}
 					>
-						<option value="">-- Please Select --</option>
+						<option value="">All</option>
 						<option value="Completed">Completed</option>
 						<option value="Incompleted">Incompleted</option>
-						<option value="Both">Both</option>
 					</select>
 				</div>
 			</div>
