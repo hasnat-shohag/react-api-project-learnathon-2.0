@@ -11,6 +11,11 @@
     padding: 10px;
     border: 1px solid red;
 }
+.main-content .todo-list-content ul div:hover{
+    background-color: #ededed;
+    font-weight: 450;
+    margin-left: 10px;
+}
 .main-content .short-content label{
     padding-right: 10px;
 }
