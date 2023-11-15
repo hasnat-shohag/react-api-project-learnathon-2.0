@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-api-project-learnathon-2.0/static/css/main.f2b9d0ac.css",
-    "main.js": "/react-api-project-learnathon-2.0/static/js/main.83f157fc.js",
+    "main.css": "/react-api-project-learnathon-2.0/static/css/main.666e9bf5.css",
+    "main.js": "/react-api-project-learnathon-2.0/static/js/main.7b69e93f.js",
     "static/js/787.db68ed3b.chunk.js": "/react-api-project-learnathon-2.0/static/js/787.db68ed3b.chunk.js",
     "index.html": "/react-api-project-learnathon-2.0/index.html",
-    "main.f2b9d0ac.css.map": "/react-api-project-learnathon-2.0/static/css/main.f2b9d0ac.css.map",
-    "main.83f157fc.js.map": "/react-api-project-learnathon-2.0/static/js/main.83f157fc.js.map",
+    "main.666e9bf5.css.map": "/react-api-project-learnathon-2.0/static/css/main.666e9bf5.css.map",
+    "main.7b69e93f.js.map": "/react-api-project-learnathon-2.0/static/js/main.7b69e93f.js.map",
     "787.db68ed3b.chunk.js.map": "/react-api-project-learnathon-2.0/static/js/787.db68ed3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2b9d0ac.css",
-    "static/js/main.83f157fc.js"
+    "static/css/main.666e9bf5.css",
+    "static/js/main.7b69e93f.js"
   ]
 }
