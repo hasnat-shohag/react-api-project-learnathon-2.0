@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-api-project-learnathon-2.0/static/css/main.666e9bf5.css",
+    "main.css": "/react-api-project-learnathon-2.0/static/css/main.6e29b23f.css",
     "main.js": "/react-api-project-learnathon-2.0/static/js/main.7b69e93f.js",
     "static/js/787.db68ed3b.chunk.js": "/react-api-project-learnathon-2.0/static/js/787.db68ed3b.chunk.js",
     "index.html": "/react-api-project-learnathon-2.0/index.html",
-    "main.666e9bf5.css.map": "/react-api-project-learnathon-2.0/static/css/main.666e9bf5.css.map",
+    "main.6e29b23f.css.map": "/react-api-project-learnathon-2.0/static/css/main.6e29b23f.css.map",
     "main.7b69e93f.js.map": "/react-api-project-learnathon-2.0/static/js/main.7b69e93f.js.map",
     "787.db68ed3b.chunk.js.map": "/react-api-project-learnathon-2.0/static/js/787.db68ed3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.666e9bf5.css",
+    "static/css/main.6e29b23f.css",
     "static/js/main.7b69e93f.js"
   ]
 }
