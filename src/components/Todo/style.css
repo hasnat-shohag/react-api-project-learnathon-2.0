@@ -1,28 +1,40 @@
 .main-content{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 30px;
 }
 .main-content .todo-list-content ul{
-    list-style: number;
+    margin: 0;
+    padding: 0;
 }
 .main-content .todo-list-content ul div{
+    display: flex;
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid #b1b1b1;
+    font-size: 20px;
 }
 .main-content .todo-list-content ul div:hover{
     background-color: #ededed;
     font-weight: 450;
-    margin-left: 10px;
 }
-.main-content .short-content label{
+.main-content .todo-list-content ul div input{
+    margin-right: 10px;
+    padding: 0;
+}
+.main-content .todo-list-content .id-style{
+    color: #0B0F3D;
+    font-weight: 600;
+}
+.main-content .header-content {
+    text-align: center; 
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.main-content .header-content .short-content label{
     padding-right: 10px;
 }
-.main-content .short-content{
+.main-content .header-content .short-content{
     font-size: 20px;
 }
-.main-content .short-content select{
+.main-content .header-content .short-content select{
     font-size: 20px;
     width: 150px;
     padding: 2px;
@@ -30,6 +42,6 @@
     text-align: center;
     background-color: transparent;
 }
-.main-content .short-content select option{
+.main-content .header-content .short-content select option{
     font-size: 20px;
 }

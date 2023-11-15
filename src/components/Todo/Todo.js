@@ -34,6 +34,14 @@ const Todo = () => {
 		setFilter(event.target.value);
 	};
 
+	const handleCheckboxChange = (id) => {
+		setValue(
+			value.map((todo) =>
+				todo.id === id ? { ...todo, completed: !todo.completed } : todo
+			)
+		);
+	};
+
 	if (isLoading) {
 		return <LoadingSpinner />;
 	}
@@ -53,41 +61,41 @@ const Todo = () => {
 	return (
 		<div>
 			<div className="main-content">
-				<div className="todo-list-content">
-					<div style={{ textAlign: "center", fontSize: "25px" }}>
-						Todo List
+				<div className="header-content">
+					<h1>Todo List</h1>
+					<div className="short-content">
+						<label>Filter: </label>
+						<select
+							name="filter"
+							value={filter}
+							onChange={handleChangeFilter}
+						>
+							<option value="">All</option>
+							<option value="Completed">Completed</option>
+							<option value="Incompleted">Incompleted</option>
+						</select>
 					</div>
+				</div>
+				<div className="todo-list-content">
 					<ul>
 						{todoList.map((val) => {
 							let dynamicTitle =
 								"This is the Title of the User " + val.id;
 							return (
 								<div key={val.id} title={dynamicTitle}>
-									<span
-										style={{
-											color: "#0B0F3D",
-											fontWeight: "600",
-										}}
-									>
-										{val.id}
-									</span>
-									. {val.title}
+									<input
+										type="checkbox"
+										checked={val.completed}
+										onChange={() =>
+											handleCheckboxChange(val.id)
+										}
+									/>
+									<span className="id-style">{val.id}</span>.{" "}
+									{val.title}
 								</div>
 							);
 						})}
 					</ul>
-				</div>
-				<div className="short-content">
-					<label>Filter: </label>
-					<select
-						name="filter"
-						value={filter}
-						onChange={handleChangeFilter}
-					>
-						<option value="">All</option>
-						<option value="Completed">Completed</option>
-						<option value="Incompleted">Incompleted</option>
-					</select>
 				</div>
 			</div>
 		</div>
